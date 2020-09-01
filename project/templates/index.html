@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{%block head%}
+<style>
+body{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+{%endblock%}
+
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12" align="middle">
+        <h1>Cronastaurant</h1>
+        <button type="button" class="btn btn-dark"><a id="order" href="/imaginarymenu" style="color:rgb(255, 255, 255);">Order</a></button>
+    </div>
+  </div>
+{% endblock %}
